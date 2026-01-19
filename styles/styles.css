@@ -45,6 +45,7 @@ body{
 
 .text-color{
     opacity: 0.6;
+    font-size: 0.9rem;
 }
 /* Nav Bar */
 nav{
@@ -156,9 +157,9 @@ hr{
     margin-top: 3rem;
 }
 
-.podcast-content p{
+/* .podcast-content p{
     font-size: 1rem;
-}
+} */
 
 .podcast-container hr{
     border: 1.5px solid #533C72;
@@ -211,7 +212,7 @@ hr{
     background-color: #351165;
     border: none;
     border-radius: 40px;
-    padding: 25px 25px;
+    padding: 30px 30px;
     
 }
 
@@ -225,9 +226,9 @@ hr{
     margin-bottom: 16px;
 }
 
-.cards p{
+/* .cards p{
     font-size: 0.8rem;
-}
+} */
 
 .first-card{
     display: flex;
@@ -244,6 +245,8 @@ hr{
 .two-column-one-row{
     grid-column: span 2;
     grid-row: span 1;
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
 }
 
 /* Featured Episode */
@@ -287,7 +290,7 @@ hr{
 
 .feature-card p{
     margin-top: 8px;
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
     font-weight: 400;
 }
 
@@ -414,8 +417,8 @@ footer h1{
         justify-content: center;
     }
 
-    .podcast-card p{
-        font-size: 14px;
+    .podcast-container hr{
+        margin: 5rem 3rem;
     }
 
     .podcast-content{
@@ -431,7 +434,12 @@ footer h1{
     .card-container{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-        
+    }
+
+    .one-column-two-row,
+    .two-column-one-row{
+        grid-column: span 1;
+        grid-row: span 1;
     }
 
     /* Featured Episode */
@@ -453,6 +461,10 @@ footer h1{
     .host-content{
         flex-direction: column;
         text-align: center;
+    }
+
+    .icons{
+        justify-content: center;
     }
 
     /* Footer */
