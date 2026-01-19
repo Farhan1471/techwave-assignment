@@ -59,7 +59,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 12px 120px;
-    /* padding: 0 auto; */
 }
 
 .logo h1{
@@ -99,7 +98,6 @@ hr{
 /* Hero Section */
 .banner-container{
     min-height: 100vh;
-    /* padding-top: 120px; */
     color: #FFFFFF;
     background-image: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
@@ -185,7 +183,7 @@ hr{
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
-    margin: 7rem;
+    margin: 0 7rem 7rem;
 }
 
 .podcast-card h1{
@@ -206,13 +204,6 @@ hr{
     height: 40%;
     padding: 120px 200px;
 }
-
-/* .grid-container h1{
-    color: #FFFFFF;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-} */
 
 .card-container{
     display: grid;
@@ -241,10 +232,6 @@ hr{
     margin-bottom: 16px;
 }
 
-/* .cards p{
-    font-size: 0.8rem;
-} */
-
 .first-card{
     display: flex;
     flex-direction: column;
@@ -260,8 +247,6 @@ hr{
 .two-column-one-row{
     grid-column: span 2;
     grid-row: span 1;
-    /* margin-bottom: 0;
-    padding-bottom: 0; */
 }
 
 /* Featured Episode */
@@ -300,12 +285,10 @@ hr{
 .feature-card h3{
     font-size: 1.25rem;
     font-weight: 700;
-    /* margin-bottom: 8px; */
 }
 
 .feature-card p{
     margin-top: 8px;
-    /* font-size: 0.875rem; */
     font-weight: 400;
 }
 
@@ -382,18 +365,6 @@ footer{
     gap: 5px;
 }
 
-/* .footer-icon{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin: 1.5rem 0;
-}
-
-.display-flex{
-    display: flex;
-    gap: 5px;
-} */
-
 /* Responsive for Small Device */
 @media screen and (max-width: 576px) {
     /* Navigation Bar */
@@ -433,9 +404,11 @@ footer{
 
     .hero-microphone {
         width: 55px;
-        /* top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
+    }
+
+    .new{
+        top: -15px;
+        right: 10px;
     }
 
     /* About the Podcast */
@@ -447,7 +420,7 @@ footer{
     }
 
     .podcast-container hr{
-        margin: 5rem 3rem;
+        margin: 3rem 1rem;
     }
 
     .podcast-content{
@@ -483,15 +456,14 @@ footer{
     }
 
     .feature-card-container iframe{
+        width: 100%;
+        height: 300px; 
         max-height: none;
-        height: auto;
-        margin-bottom: 0;
     }
 
     .feature-card{
-        max-height: none;
-        height: auto;
-        margin-bottom: 0;
+        padding: 20px;
+        height: auto; 
     }
 
     /* Bonus Section */
@@ -522,5 +494,4 @@ footer{
         justify-content: center;
         text-align: center;
     }
-
 }
