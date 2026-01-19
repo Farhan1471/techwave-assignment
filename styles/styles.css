@@ -187,12 +187,12 @@ hr{
     padding: 120px 200px;
 }
 
-.grid-container h1{
+/* .grid-container h1{
     color: #FFFFFF;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-}
+} */
 
 .card-container{
     display: grid;
@@ -388,7 +388,7 @@ footer h1{
 
 
 
-    /*  */
+    /* About the Podcast */
     .podcast-card{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -399,4 +399,29 @@ footer h1{
     .podcast-card p{
         font-size: 14px;
     }
+
+
+    /* Choose TechWave */
+
+    .grid-container{
+        padding: 20px;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        
+    }
+
+    /* Featured Episode */
+    .feature-container{
+        margin: 20px;
+    }
+
+    .feature-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 100px;
+    }
+
 }
