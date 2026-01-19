@@ -24,6 +24,11 @@ body{
     cursor: pointer;
 }
 
+.btn-2:hover{
+    background-color: #00FF88;
+    color: #000000;
+}
+
 .btn-2{
     background: transparent;
     border-color: #00FF88;
@@ -39,6 +44,7 @@ body{
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     font-size: 2.5rem;
     font-weight: 700;
 }
@@ -93,6 +99,7 @@ hr{
 /* Hero Section */
 .banner-container{
     min-height: 100vh;
+    /* padding-top: 120px; */
     color: #FFFFFF;
     background-image: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
@@ -149,17 +156,25 @@ hr{
     margin-bottom: 1.5rem;
 }
 
+.hero-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
 /* About the podcast */
 
 .podcast-content{
     color: #FFFFFF;
     text-align: center;
     margin-top: 3rem;
+    margin: 0 auto;
 }
 
-/* .podcast-content p{
-    font-size: 1rem;
-} */
+.podcast-description{
+    max-width: 42rem;
+    margin: 0 auto;
+}
 
 .podcast-container hr{
     border: 1.5px solid #533C72;
@@ -301,7 +316,7 @@ hr{
 
 /* Host */
 .host-container{
-    margin: 120px 200px;
+    margin: 0px 200px 120px;
 }
 .host-content{
     background-color: #351165;
@@ -353,11 +368,6 @@ footer{
     padding: 120px 0;
 }
 
-footer h1{
-
-}
-
-
 .footer-icons{
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -407,7 +417,26 @@ footer h1{
         display: block;
     }
 
+    /* Hero Section */
+    .banner-container{
+        min-height: 20vh;
+        padding-top: 0;
+    }
+    
+    .hero-images{
+        margin-top: 3.5rem;
+    }
 
+    .hero-circle{
+        width: 190px;
+    }
+
+    .hero-microphone {
+        width: 55px;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
 
     /* About the Podcast */
     .podcast-card{
@@ -450,7 +479,19 @@ footer h1{
     .feature-card-container{
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-        gap: 100px;
+        gap: 40px;
+    }
+
+    .feature-card-container iframe{
+        max-height: none;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .feature-card{
+        max-height: none;
+        height: auto;
+        margin-bottom: 0;
     }
 
     /* Bonus Section */
@@ -468,14 +509,18 @@ footer h1{
     }
 
     /* Footer */
+    footer{
+        padding: 35px 20px;
+    }
+    
+    footer img{
+        width: 40%;
+    }
+
     .footer-icons{
-        /* display: grid; */
         grid-template-columns: repeat(2, auto);
         justify-content: center;
         text-align: center;
-        /* row-gap: 20px;
-        column-gap: 10px; */
-        /* gap: 20px; */
     }
 
 }
