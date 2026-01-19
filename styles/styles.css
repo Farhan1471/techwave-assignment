@@ -79,6 +79,10 @@ nav{
     font-weight: 500;
 }
 
+.hamburger-menu{
+    display: none;
+}
+
 hr{
     border: 1.5px solid #533C72;
 }
@@ -354,4 +358,29 @@ footer h1{
 .display-flex{
     display: flex;
     gap: 5px;
+}
+
+/* Responsive for Small Device */
+@media screen and (max-width: 576px) {
+    /* Navigation Bar */
+    nav{
+        padding-left: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav h1{
+        font-size: 20px;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #nav-btn{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
 }
