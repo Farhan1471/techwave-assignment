@@ -80,18 +80,51 @@ nav{
 }
 
 hr{
-    border: 1.5px solid #350954;
+    border: 1.5px solid #533C72;
 }
 /* Hero Section */
-/* .banner-container{
+.banner-container{
+    min-height: 100vh;
     color: #FFFFFF;
-    background-image: url(../assets/hero-bg.png), url(../assets/hero-circle.png);
-    height: 100%;
+    background-image: url(../assets/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 200px 0;
-} */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-images{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero-circle{
+    width: 300px;
+    display: block;
+}
+
+.hero-microphone {
+    position: absolute;
+    width: 85px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.new{
+    color: #1A0B2E;
+    background-color: #00FF88;
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: -5px;
+    right: 20px;
+}
 
 .hero-content{
     color: #FFFFFF;
@@ -117,7 +150,7 @@ hr{
 }
 
 .podcast-container hr{
-    border: 1.5px solid #350954;
+    border: 1.5px solid #533C72;
     margin: 5rem 8rem;
 }
 
@@ -163,15 +196,12 @@ hr{
     gap: 30px;
 }
 
-/* .grid-container h2{
-    margin-bottom: 40px;
-} */
-
 .cards{
     background-color: #351165;
     border: none;
     border-radius: 40px;
-    padding: 40px 40px;
+    padding: 25px 25px;
+    
 }
 
 .cards img{
@@ -182,6 +212,17 @@ hr{
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 16px;
+}
+
+.cards p{
+    font-size: 0.8rem;
+}
+
+.first-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .one-column-two-row{
@@ -267,16 +308,24 @@ hr{
 
 .icons{
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
     gap: 8px;
-    /* padding: 10px; */
+    margin-top: 16px;
 }
 
-.icons img{
-    border: 1px solid salmon;
-    padding: 6px;
-    border-radius: 100%;
+.icon-container{
+    height: 50px;
+    width: 50px;
+    border-radius: 1000px;
+    border: 2px solid #533C72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon-container img{
+    height: 20px;
+    width: 20px;
 }
 
 /* footer */
