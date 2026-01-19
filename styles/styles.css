@@ -39,7 +39,7 @@ body{
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 /* Nav Bar */
@@ -47,9 +47,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 4rem; */
     padding: 12px 120px;
-
+    /* padding: 0 auto; */
 }
 
 .logo h1{
@@ -151,6 +150,10 @@ hr{
     color: #FFFFFF;
     text-align: center;
     margin-top: 3rem;
+}
+
+.podcast-content p{
+    font-size: 1rem;
 }
 
 .podcast-container hr{
@@ -364,8 +367,7 @@ footer h1{
 @media screen and (max-width: 576px) {
     /* Navigation Bar */
     nav{
-        padding-left: 20px;
-        display: flex;
+        padding: 20px;
         justify-content: space-between;
     }
     nav h1{
@@ -382,5 +384,12 @@ footer h1{
 
     .hamburger-menu{
         display: block;
+    }
+
+
+
+    /*  */
+    .podcast-content{
+        
     }
 }
