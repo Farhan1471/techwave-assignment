@@ -170,7 +170,7 @@ hr{
 
 .podcast-card h1{
     color: #00FF88;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     text-align: center;
 }
@@ -389,7 +389,14 @@ footer h1{
 
 
     /*  */
-    .podcast-content{
-        
+    .podcast-card{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .podcast-card p{
+        font-size: 14px;
     }
 }
