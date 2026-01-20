@@ -94,6 +94,10 @@ nav{
     font-weight: 500;
 }
 
+nav #menu a:hover{
+    color: #9100F8;
+}
+
 .hamburger-menu{
     display: none;
 }
